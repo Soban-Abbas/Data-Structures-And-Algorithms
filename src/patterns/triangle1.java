@@ -19,6 +19,7 @@ for(int k=1;k<=i;k++){
             System.out.println("");
 
         }
+        sc.close();
     }
 }
 //outer loop which print rows has 2more nested loops one 
