@@ -7,6 +7,7 @@ public class diamond {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter rows : ");
         int totalNumberOfRows = sc.nextInt();
+int counter=1;
 
 for(int rows=1;rows<=totalNumberOfRows;rows++){
     for(int spaces=1;spaces<=totalNumberOfRows-rows;spaces++){

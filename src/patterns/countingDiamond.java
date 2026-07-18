@@ -1,0 +1,38 @@
+package patterns;
+
+import java.util.Scanner;
+
+public class countingDiamond {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter rows : ");
+        int totalNumberOfRows = sc.nextInt();
+        int counter = 1;
+
+        for (int rows = 1; rows <= totalNumberOfRows; rows++) {
+            for (int spaces = 1; spaces <= totalNumberOfRows - rows; spaces++) {
+                System.out.print("  ");
+            }
+            for (int star = 1; star <= rows + (rows - 1); star++) {
+                System.out.print(counter + " ");
+                counter++;
+            }
+            counter = 1;
+            System.out.println();
+        }
+
+        for (int rows = totalNumberOfRows - 1; rows >= 1; rows--) {
+            for (int spaces = 1; spaces <= totalNumberOfRows - rows; spaces++) {
+                System.out.print("  ");
+            }
+            for (int star = 1; star <= rows + (rows - 1); star++) {
+                System.out.print(counter + " ");
+                counter++;
+            }
+            counter = 1;
+            System.out.println();
+        }
+        sc.close();
+
+    }
+}
