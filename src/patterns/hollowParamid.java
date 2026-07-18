@@ -2,7 +2,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class helloParamid {
+public class hollowParamid {
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
         System.out.println("Enter rows : ");
