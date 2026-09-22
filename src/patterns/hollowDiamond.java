@@ -40,7 +40,6 @@ System.out.print(" ");
 
 
 
-
         sc.close();
     }
 }
